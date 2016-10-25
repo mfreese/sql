@@ -31,6 +31,9 @@ How much would it cost to buy one of each tool?
  SELECT SUM (PRICE) FROM ITEMS WHERE CATEGORY LIKE "%Tools%";
 
 How many total items did we sell?
-  
+ SELECT SUM ("quantity") FROM orders;
+  2125
+
 How much was spent on books?
+  SELECT SUM (“quantity”) FROM orders WHERE CATEGORY like “%books%”
 Simulate buying an item by inserting a User for yourself and an Order for that User.
